@@ -1,13 +1,11 @@
 <?php
-$n=readline();     //read input
-$a=array($n);      //read input
-while($n!=0){
-    $lastDigit=$a[$n-1];
-    $n--; 
+$n=(int)readline();
+$a=explode(' ', readline(),$n);
+$temp=(int)($a[$n-1])%10;
+if($temp==0){
+echo "Yes";
 }
-if($lastDigit%10==0){
-    echo "yes";
-}else{
-    echo "No";
+else{
+echo "No";
 }
 ?>
